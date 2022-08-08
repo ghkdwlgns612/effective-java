@@ -17,7 +17,7 @@ public final class CaseInsensitiveString {
     public boolean equals(Object obj) {
         if (obj instanceof CaseInsensitiveString)
             return s.equalsIgnoreCase(((CaseInsensitiveString) obj).s);
-        if (obj instanceof String)
+        if (obj instanceof String) //다른 타입을 지원하지 말아야한다.(대칭성)
             return s.equalsIgnoreCase((String) obj);
         return false;
     }
