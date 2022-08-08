@@ -11,22 +11,22 @@ import java.util.ArrayList;
 public class ColorPoint extends Point {
 
     private final Color color;
-    private final Point point;
-
-    @Override
-    public boolean equals(Object o) {
-        if (!(o instanceof ColorPoint))
-            return false;
-        ColorPoint cp = (ColorPoint) o;
-        return cp.point.equals(point) && cp.color.equals(color);
-    }
+//    private final Point point;
+//
+//    @Override
+//    public boolean equals(Object o) {
+//        if (!(o instanceof ColorPoint))
+//            return false;
+//        ColorPoint cp = (ColorPoint) o;
+//        return cp.point.equals(point) && cp.color.equals(color);
+//    }
 
     public ColorPoint(int x, int y, Color color) {
         super(x, y);
         this.color = color;
     }
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        Point point = new Point(1,2);
 //        List<Point> points = new ArrayList<>();
 //        points.add(point);
