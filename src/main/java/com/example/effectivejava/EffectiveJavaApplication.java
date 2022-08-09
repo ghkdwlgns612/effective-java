@@ -20,5 +20,4 @@ public class EffectiveJavaApplication {
 
         System.out.println(numbers);
     }
-
 }
