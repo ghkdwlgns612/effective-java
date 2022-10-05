@@ -6,7 +6,7 @@ public class Deprecation {
      * @deprecated in favor of
      * {@link #Deprecation(String)} 
      */
-    @Deprecated(forRemoval = true, since = "1.2")
+//    @Deprecated(forRemoval = true, since = "1.2")
     public Deprecation() {
     }
 

@@ -1,10 +1,10 @@
 package com.example.effectivejava.item8.cleaner_as_a_saftynet;
 
-import java.lang.ref.Cleaner;
+//import java.lang.ref.Cleaner;
 
-public class Room implements AutoCloseable{
+public class Room implements AutoCloseable {
 
-    private static final Cleaner cleaner = Cleaner.create();
+//    private static final Cleaner cleaner = Cleaner.create();
 
 
     private static class State implements Runnable {
@@ -24,15 +24,15 @@ public class Room implements AutoCloseable{
 
     private final State state;
 
-    private final Cleaner.Cleanable cleanable;
+//    private final Cleaner.Cleanable cleanable;
 
     public Room(int numJunkPiles) {
         state = new State(numJunkPiles);
-        cleanable = cleaner.register(this,state);
+//        cleanable = cleaner.register(this, state);
     }
 
     @Override
     public void close() throws Exception {
-        cleanable.clean();
+//        cleanable.clean();
     }
 }

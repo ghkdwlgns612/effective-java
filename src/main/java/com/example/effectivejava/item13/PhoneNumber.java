@@ -52,20 +52,20 @@ public class PhoneNumber implements Cloneable{
         System.out.println(clone.equals(pn)); //true아닐수도
     }
 
-    public static void main(String[] args) {
-        Object[] values = new Object[2];
-        values[0] = new PhoneNumber();
-        values[1] = new PhoneNumber();
-
-        Stack stack = new Stack(values);
-        Stack copy = stack.clone();
-
-        while (!stack.isEmpty())
-            System.out.println(stack.pop());
-
-        while (!copy.isEmpty())
-            System.out.println(copy.pop());
-    }
+//    public static void main(String[] args) {
+//        Object[] values = new Object[2];
+//        values[0] = new PhoneNumber();
+//        values[1] = new PhoneNumber();
+//
+//        Stack stack = new Stack(values);
+//        Stack copy = stack.clone();
+//
+//        while (!stack.isEmpty())
+//            System.out.println(stack.pop());
+//
+//        while (!copy.isEmpty())
+//            System.out.println(copy.pop());
+//    }
 }
 
 
