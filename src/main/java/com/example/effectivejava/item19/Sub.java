@@ -1,6 +1,7 @@
 package com.example.effectivejava.item19;
 
 import java.time.Instant;
+import java.util.Collections;
 
 public class Sub extends FaultSuper{
 
@@ -19,5 +20,7 @@ public class Sub extends FaultSuper{
         Sub sub = new Sub();
         System.out.println("==============");
         sub.overrideMe();
+
+
     }
 }
