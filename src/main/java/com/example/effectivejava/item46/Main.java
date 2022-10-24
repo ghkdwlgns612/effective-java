@@ -7,15 +7,15 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-        Map<String, Long> words = new Scanner(file).token()) {
-            words.forEach(word -> {
-                freq.merge(word.toLowerCase(), 1L, Long::sum);
-            });
-        }
-
-        Map<String, Long> freq;
-        try(Stream<String> words = new Scanner(file).token()) {
-            freq = words.collect(groupingBy(String::toLowerCase, countin()));
-        }
+//        Map<String, Long> words = new Scanner(file).token()) {
+//            words.forEach(word -> {
+//                freq.merge(word.toLowerCase(), 1L, Long::sum);
+//            });
+//        }
+//
+//        Map<String, Long> freq;
+//        try(Stream<String> words = new Scanner(file).token()) {
+//            freq = words.collect(groupingBy(String::toLowerCase, countin()));
+//        }
     }
 }
